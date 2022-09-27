@@ -1,0 +1,23 @@
+{
+  "name": "dad-jokes-blog",
+  "version": "1.0.0",
+  "description": "dad jokes",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Leximiller128/hi-blog-im-dad.git"
+  },
+  "author": "dana, lexi, lorena, kaleb",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Leximiller128/hi-blog-im-dad/issues"
+  },
+  "homepage": "https://github.com/Leximiller128/hi-blog-im-dad#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
