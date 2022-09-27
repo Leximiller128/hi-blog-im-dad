@@ -1,2 +1,2 @@
 # dad-jokes-blog
-[link here]()
+[link here](sometext)
