@@ -15,6 +15,11 @@ Post.belongsTo(User, {
   onDelete: "CASCADE",
 });
 
+//User hasMany Posts
+User.hasMany(Post, {
+  foreignKey: "category_id",
+});
+
 // const app = express();
 // const PORT = process.env.PORT || 3001;
 
