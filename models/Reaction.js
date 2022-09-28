@@ -1,3 +1,4 @@
+
 const { Sequelize, Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/config');
 
@@ -11,3 +12,6 @@ Reaction.init(
 )
 
 // there is probably more that goes in here, will do more research. 
+
+//save for after mvp
+
