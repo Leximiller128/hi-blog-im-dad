@@ -1,9 +1,3 @@
-// const path = require("path");
-// const express = require("express");
-// const session = require("express-session");
-// const exphbs = require("express-handlebars");
-// const helpers = require('./utils/helpers');
-
 //import models
 const Post = require("./Post");
 const Reaction = require("./Reaction");
@@ -12,12 +6,15 @@ const User = require("./User");
 
 //Post belongsTo User
 Post.belongsTo(User, {
-  foreignKey: "category_id",
+  foreignKey: "user_id",
   onDelete: "CASCADE",
 });
 
 //User hasMany Posts
 User.hasMany(Post, {
+<<<<<<< HEAD
+  foreignKey: "user_id",
+=======
   foreignKey: "category_id",
 
 
@@ -26,9 +23,7 @@ Post.belongsTo(User, {
   foreignKey: "category_id",
   onDelete: "CASCADE",
 
+>>>>>>> 7732d13079483febf69caa76efe162f395a586d0
 });
 
-// const app = express();
-// const PORT = process.env.PORT || 3001;
-
-// const sequelize = require("./config/config");
+//Reaction block would go here
