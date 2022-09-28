@@ -1,4 +1,4 @@
-# dad-jokes-blog
+# Dad-Jokes-Blog (Hi Blog i'm Dad)
 
 ## Index
 
@@ -11,3 +11,22 @@
 6. [Technologies](#technologies)
 7. [Collaborators](#collaborators)
 8. [Resources](#resources)
+
+# Overview
+### Description
+
+### User Story
+
+## [Features](#index) 
+
+## [Future Enhancements](#index)
+
+## [Acceptance Criteria](#index)
+
+## [Website Preview](#index) 
+
+## [Technologies](#index)
+
+## [Collaborators](#index)
+
+## [Resources](#index)
