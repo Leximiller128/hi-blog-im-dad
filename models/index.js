@@ -1,6 +1,6 @@
 //import models
 const Post = require("./Post");
-const Reaction = require("./Reaction");
+// const Reaction = require("./Reaction");
 const User = require("./User");
 
 //Post belongsTo User
@@ -15,3 +15,9 @@ User.hasMany(Post, {
 });
 
 //Reaction block would go here
+
+//module.exports
+module.exports = {
+  User,
+  Post,
+};
