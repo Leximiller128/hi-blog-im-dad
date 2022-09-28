@@ -9,10 +9,23 @@ const Post = require("./Post");
 const Reaction = require("./Reaction");
 const User = require("./User");
 
+
 //Post belongsTo User
 Post.belongsTo(User, {
   foreignKey: "category_id",
   onDelete: "CASCADE",
+});
+
+//User hasMany Posts
+User.hasMany(Post, {
+  foreignKey: "category_id",
+
+
+//Post belongsTo User
+Post.belongsTo(User, {
+  foreignKey: "category_id",
+  onDelete: "CASCADE",
+
 });
 
 // const app = express();
