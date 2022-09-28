@@ -5,13 +5,19 @@ const loginHandler = async (event) => {
   //collect the stuff from login form
   const emailAddress = document.querySelector("#email-login").value.trim();
   const password = document.querySelector("#password-login").value.trime();
-};
 
-if (email && password) {
+  if (email && password) {
     //make sure the below route is correct
-  const response = await fetch("/controllers/api/user-routes.js", {
-    method: "POST",
-    body: JSON.stringify({ email, password }),
-    headers: { "Content-Type": "application/json" },
-  });
-}
+    const response = await fetch("/controllers/api/user-routes.js", {
+      method: "POST",
+      body: JSON.stringify({ email, password }),
+      headers: { "Content-Type": "application/json" },
+    });
+
+    if (response.ok) {
+      document.location.replace("./profile.js");
+    } else {
+      alert(response.statusText);
+    }
+  }
+};
