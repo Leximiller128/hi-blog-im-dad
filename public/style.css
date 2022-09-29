@@ -1,0 +1,18 @@
+:root {
+    --primary: #6085EB;
+    --secondary: #EB8E78;
+    --tertiary: #9FF02E;
+    --light-dark: #7B9E4B;
+    --dark: #314E9E; 
+    --border-radius: 0.3rem;
+}
+
+body {
+    background-color: var(--primary);
+    margin: 0;
+    padding: 0;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: var(--dark);
+    line-height: 1.5;
+    font-size: 16px;
+}
