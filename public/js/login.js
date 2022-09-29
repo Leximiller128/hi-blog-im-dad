@@ -21,3 +21,31 @@ const loginHandler = async (event) => {
     }
   }
 };
+
+const signupHandler = async (event) => {
+  event.preventDefault();
+
+  const name = document.querySelector("#name-signup").value.trim();
+  const email = document.querySelector("#email-signup").value.trim();
+  const password = document.querySelector("#password-signup").value.trim();
+
+  if (name && email && password) {
+    //is below path correct?
+    const response = await fetch("/controllers/api/user-routes.js", {
+      method: "POST",
+      body: JSON.stringify({ name, email, passrod }),
+      headers: { "Content-Type": "application/json" },
+    });
+
+    if (response.ok) {
+      document.location.replace("/public/js/profile.js");
+    } else {
+      alert(response.statusText);
+    }
+  }
+};
+
+//query selctors
+document.querySelector("login-form").addEventListener("submit", loginHandler);
+
+document.querySelector("signup-form").addEventListener("submit", signupHandler);
