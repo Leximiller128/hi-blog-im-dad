@@ -36,7 +36,16 @@ const signupHandler = async (event) => {
       body: JSON.stringify({ name, email, passrod }),
       headers: { "Content-Type": "application/json" },
     });
+
+    if (response.ok) {
+      document.location.replace("/public/js/profile.js");
+    } else {
+      alert(response.statusText);
+    }
   }
 };
 
+//query selctors
 document.querySelector("login-form").addEventListener("submit", loginHandler);
+
+document.querySelector("signup-form").addEventListener("submit", signupHandler);
