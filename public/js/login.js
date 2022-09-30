@@ -10,21 +10,20 @@ const loginHandler = async (event) => {
     .querySelector("#exampleInputPassword1")
     .value.trime();
 
-    //make sure the below route is correct
-    const response = await fetch("/controllers/api/user-routes.js", {
-      method: "POST",
-      body: JSON.stringify({
-        email: emailAddress.value,
-        password: password.value,
-      }),
-      headers: { "Content-Type": "application/json" },
-    });
+  //make sure the below route is correct
+  const response = await fetch("/controllers/api/user-routes.js", {
+    method: "POST",
+    body: JSON.stringify({
+      email: emailAddress.value,
+      password: password.value,
+    }),
+    headers: { "Content-Type": "application/json" },
+  });
 
-    if (response.ok) {
-      document.location.replace("./profile.js");
-    } else {
-      alert("That isn't it!");
-    }
+  if (response.ok) {
+    document.location.replace("./profile.js");
+  } else {
+    alert("That isn't it!");
   }
 };
 
