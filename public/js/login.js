@@ -11,7 +11,7 @@ const loginHandler = async (event) => {
     .value.trime();
 
   //make sure the below route is correct
-  const response = await fetch("/controllers/api/user-routes.js", {
+  const response = await fetch("/controllers/dashboard-routes.js", {
     method: "POST",
     body: JSON.stringify({
       email: emailAddress.value,

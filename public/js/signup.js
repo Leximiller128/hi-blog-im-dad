@@ -9,7 +9,7 @@ const signupHandler = async (event) => {
     .value.trim();
 
   //is below path correct?
-  const response = await fetch("/controllers/api/user-routes.js", {
+  const response = await fetch("/controllers/home-routes.js", {
     method: "POST",
     body: JSON.stringify({
       email: email.value,
