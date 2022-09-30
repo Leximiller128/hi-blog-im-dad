@@ -1,4 +1,5 @@
 //start with const sucka, and event.preventDefault
+console.log("hello")
 const loginHandler = async (event) => {
   event.preventDefault();
 
@@ -8,10 +9,10 @@ const loginHandler = async (event) => {
     .value.trim();
   const password = document
     .querySelector("#exampleInputPassword1")
-    .value.trime();
+    .value.trim();
 
   //make sure the below route is correct
-  const response = await fetch("/controllers/login-routes.js", {
+  const response = await fetch("/login-routes/", {
     method: "POST",
     body: JSON.stringify({
       email: emailAddress.value,
@@ -28,4 +29,4 @@ const loginHandler = async (event) => {
 };
 
 //query selctors
-document.querySelector("login-form").addEventListener("submit", loginHandler);
+document.querySelector("#submit").addEventListener("submit", loginHandler);

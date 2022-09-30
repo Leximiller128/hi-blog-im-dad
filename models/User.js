@@ -49,6 +49,7 @@ User.init(
         return updatedUserData;
       },
     },
+    sequelize
   }
 );
 
