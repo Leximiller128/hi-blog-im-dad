@@ -37,7 +37,6 @@ User.init(
       },
     },
   },
-  // have to add hooks here? Research hooks...
   {
     hooks: {
       // set up beforeCreate lifecycle "hook" functionality
