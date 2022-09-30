@@ -31,23 +31,26 @@ const loginHandler = async (event) => {
 const signupHandler = async (event) => {
   event.preventDefault();
 
-  const name = document.querySelector("#name-signup").value.trim();
+  // const name = document.querySelector("#username-input-signup").value.trim();
   const email = document.querySelector("#email-signup").value.trim();
-  const password = document.querySelector("#password-signup").value.trim();
+  const password = document
+    .querySelector("#password-input-signup")
+    .value.trim();
 
-  if (name && email && password) {
-    //is below path correct?
-    const response = await fetch("/controllers/api/user-routes.js", {
-      method: "POST",
-      body: JSON.stringify({ name, email, passrod }),
-      headers: { "Content-Type": "application/json" },
-    });
+  //is below path correct?
+  const response = await fetch("/controllers/api/user-routes.js", {
+    method: "POST",
+    body: JSON.stringify({
+      email: email.value,
+      password: password.value,
+    }),
+    headers: { "Content-Type": "application/json" },
+  });
 
-    if (response.ok) {
-      document.location.replace("/public/js/profile.js");
-    } else {
-      alert(response.statusText);
-    }
+  if (response.ok) {
+    document.location.replace("/public/js/profile.js");
+  } else {
+    alert(response.statusText);
   }
 };
 
