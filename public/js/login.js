@@ -3,8 +3,8 @@ const loginHandler = async (event) => {
   event.preventDefault();
 
   //collect the stuff from login form
-  const emailAddress = document.querySelector("#email-login").value.trim();
-  const password = document.querySelector("#password-login").value.trime();
+  const emailAddress = document.querySelector("#exampleInputEmail1").value.trim();
+  const password = document.querySelector("#exampleInputPassword1").value.trime();
 
   if (email && password) {
     //make sure the below route is correct
@@ -22,6 +22,7 @@ const loginHandler = async (event) => {
   }
 };
 
+//sign up block: should it have its own page?
 const signupHandler = async (event) => {
   event.preventDefault();
 
