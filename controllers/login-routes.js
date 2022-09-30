@@ -1,6 +1,15 @@
 //require express
 const router = require('express').Router();
+const session = require('express-session');
 const { User } = require('../models/');
+
+router.get('/', async (req, res) => {
+  try {
+    res.render('login');
+  } catch (err) {
+    res.status(501).json(err);
+  }
+})
 
 router.post('/', async (req, res) => {
   try {
