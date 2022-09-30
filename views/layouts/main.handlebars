@@ -3,42 +3,35 @@
 
 <head>
     <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/style.css">
     <title>Hi Blog, I'm Dad!</title>
-    <link rel="stylesheet" href="/public/style.css">
   </head>
-  <body>
-    
-      
+
+  <body>    
     <div class="jumbotron jumbotron-fluid">
-        <div class="container">
+        <div class="container justify-center">
           <h1 class="display-4">Hi Blog, I'm Dad!</h1>
-          <p class="lead">A place for dad's and dad-like figures to post and learn new dad jokes!</p>
+          <p class="lead">They're not Dad Jokes, they're Rad Jokes</p>
         </div>
       </div>
 
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="navbar-brand" href="#">Navbar</a>
-      
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Disabled</a>
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
-        </div>
+      <nav class="navbar">
+        <ul>
+            <li class="li-inline nav-item"><a href="/">Homepage/dashboard</a></li>
+      <li class="li-inline nav-item"><a href="">Your Posts/Profile</a></li>
+      <li class="li-inline nav-item"><a href=" ">New Post</a></li>
+      <li class="li-inline nav-item"><a href="#" id="logout-link">Logout</a></li>
+        </ul>
       </nav>
+
+      <main class="col-auto">
+            {{{body}}}
+      </main>
+
+      <footer class="flex-row justify-center">
+        &copy; Dad Jokes 
+      </footer>
     </body>
     </html>
+    <script> src="/public/js/logout.js"</script>
