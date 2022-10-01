@@ -1,9 +1,10 @@
 :root {
     --primary: #E1BB83;
-    --secondary: #A8782F;
+    --secondary: #a8782faf;
     --tertiary: #5C4C35;
     --light-dark: #A8782F;
     --dark: #5C411A; 
+    --w: white;
     --border-radius: 0.3rem;
 }
 
@@ -20,4 +21,25 @@ body {
 
 head {
     justify-content: center;
+}
+
+form{
+    background-color: var(--secondary);
+    padding: 30px;
+    border-radius: 10px;
+    outline: none;
+    border-color: var(--dark);
+    box-shadow: 0 0 20px var(--dark)
+}
+
+footer {
+    background-color: rgb(160, 132, 96);
+}
+
+a{
+    color: var(--primary);
+}
+a:hover{
+    color: var(--w);
+    text-decoration: none;
 }
