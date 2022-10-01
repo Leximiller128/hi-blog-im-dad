@@ -1,27 +1,44 @@
-<form id="login-form">
-  <div class="form-group">
-    <label for="inputEmail1">Email address</label>
-    <input
-      type="email"
-      class="form-control"
-      id="inputEmail1"
-      aria-describedby="emailHelp"
-      placeholder="Enter email"
-    />
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      AD space
+    </div>
+    <div class="col">
+      <form id="login-form">
+    <div class="form-group">
+      <label for="inputEmail1">Email address</label>
+      <input
+        type="email"
+        class="form-control"
+        id="inputEmail1"
+        aria-describedby="emailHelp"
+        placeholder="Enter email"
+      />
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Password</label>
+      <input
+        type="password"
+        class="form-control"
+        id="exampleInputPassword1"
+        placeholder="Password"
+      />
+    </div>
+    <button type="submit" class="btn btn-primary" id="submit">Sign in</button>
+    <small id="emailHelp" class="form-text text-muted" ></small>
+        <p>Not signed up yet? </p>
+        <p>Here's a joke... why did the user laugh?</p>
+        <p>Cause the user signed up! (pun intended 😜) </p>
+        <a type="button" href="/signup" id="signup-btn">Sign up for a laugh!</a>
+    <div>We'll never share your email, but we'll share your jokes</div>
+  </form>
+    </div>
+    <div class="col">
+      AD space 
+    </div>
+
   </div>
-  <div class="form-group">
-    <label for="exampleInputPassword1">Password</label>
-    <input
-      type="password"
-      class="form-control"
-      id="exampleInputPassword1"
-      placeholder="Password"
-    />
-  </div>
-  <button type="submit" class="btn btn-primary" id="submit">Submit</button>
-  <small id="emailHelp" class="form-text text-muted" ></small>
-      <a type="button" href="/signup" id="signup-btn">Sign up</a>
-  <div>We'll never share your email, but we'll share your jokes</div>
-</form>
+</div>
 
 <script src="/js/login.js"></script>
