@@ -11,6 +11,14 @@ router.get('/', async (req, res) => {
   }
 })
 
+router.get('/signup', async (req, res) => {
+  try {
+    res.render('signUp');
+  } catch (err) {
+    res.status(501).json(err);
+  }
+})
+
 router.post('/', async (req, res) => {
   try {
     const user = await User.findOne({
