@@ -16,24 +16,30 @@ body {
     color: var(--dark);
     line-height: 1.5;
     font-size: 16px;
-    text-align: center;
 }
 
 head {
     justify-content: center;
 }
 
-form{
+.jumbotron{
+    text-align: center;
+}
+
+form,
+.navbar{
     background-color: var(--secondary);
     padding: 30px;
     border-radius: 10px;
     outline: none;
     border-color: var(--dark);
-    box-shadow: 0 0 20px var(--dark)
+    box-shadow: 0 0 20px var(--dark);
+    text-align: center;
 }
 
 footer {
     background-color: rgb(160, 132, 96);
+    text-align: center;
 }
 
 a{
@@ -42,4 +48,16 @@ a{
 a:hover{
     color: var(--w);
     text-decoration: none;
+}
+
+.sideNav{
+    color: var(--dark);
+}
+
+li{
+    list-style: none;
+}
+
+li{
+    padding-bottom: 15px;
 }
