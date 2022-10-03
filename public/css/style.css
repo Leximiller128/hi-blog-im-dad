@@ -104,5 +104,10 @@ ul{
     margin: 5px 0;
     font-size: 1.2rem;
     border: 2px solid var(--light-dark);
-    border-radius: var(--border-radius);
+  }
+
+  .post-btn{
+    background-color: var(--w);
+    box-shadow: 0 0 10px var(--dark);
+    border-radius: 5px;
   }
