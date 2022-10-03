@@ -16,11 +16,14 @@ body {
     color: var(--dark);
     line-height: 1.5;
     font-size: 16px;
-    text-align: center;
 }
 
 head {
     justify-content: center;
+}
+
+.jumbotron{
+    text-align: center;
 }
 
 form{
@@ -29,11 +32,13 @@ form{
     border-radius: 10px;
     outline: none;
     border-color: var(--dark);
-    box-shadow: 0 0 20px var(--dark)
+    box-shadow: 0 0 20px var(--dark);
+    text-align: center;
 }
 
 footer {
     background-color: rgb(160, 132, 96);
+    text-align: center;
 }
 
 a{
@@ -43,3 +48,67 @@ a:hover{
     color: var(--w);
     text-decoration: none;
 }
+
+.sideNav,
+.listNav{
+    color: var(--dark);
+    font-size: 20px;
+    padding-bottom: 25px;
+}
+
+.listNavEnd{
+    padding-bottom: 65px;
+}
+
+li{
+    list-style: none;
+}
+
+ul{
+    padding-inline-start: 0px;
+}
+
+.navbar{
+    background-color: var(--secondary);
+    padding: 40px 30px 0px 30px;
+    border-radius: 10px;
+    outline: none;
+    border-color: var(--dark);
+    box-shadow: 0 0 20px var(--dark);
+    text-align: center;
+    justify-content: center;
+}
+
+.area{
+    background-color: var(--w);
+    padding: 15px;
+    max-height: fit-content;
+    overflow: auto;
+    margin: 0px 0px 0px 30px;
+    height: 450px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px var(--dark);
+}
+
+.titlePage{
+    background-color: var(--light-dark);
+    width: 400px;
+    margin: auto;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 1%;
+    margin: 5px 0;
+    font-size: 1.2rem;
+    border: 2px solid var(--light-dark);
+  }
+
+  .post-btn{
+    background-color: var(--w);
+    box-shadow: 0 0 10px #A8782F;
+    border-radius: 5px;
+    border-color: #A8782F;
+  }
