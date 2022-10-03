@@ -9,6 +9,8 @@ const PORT = process.env.PORT || 3001;
 
 const sequelize = require("./config/config");
 const { Sequelize } = require("sequelize");
+const SequelizeStore = require('connect-session-sequelize')(session.Store);
+
 
 //cookies
 const sess = {
