@@ -26,8 +26,7 @@ head {
     text-align: center;
 }
 
-form,
-.navbar{
+form{
     background-color: var(--secondary);
     padding: 30px;
     border-radius: 10px;
@@ -50,14 +49,32 @@ a:hover{
     text-decoration: none;
 }
 
-.sideNav{
+.sideNav,
+.listNav{
     color: var(--dark);
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+
+.listNavEnd{
+    padding-bottom: 65px;
 }
 
 li{
     list-style: none;
 }
 
-li{
-    padding-bottom: 15px;
+ul{
+    padding-inline-start: 0px;
+}
+
+.navbar{
+    background-color: var(--secondary);
+    padding: 40px 30px 0px 30px;
+    border-radius: 10px;
+    outline: none;
+    border-color: var(--dark);
+    box-shadow: 0 0 20px var(--dark);
+    text-align: center;
+    justify-content: center;
 }
