@@ -108,6 +108,7 @@ ul{
 
   .post-btn{
     background-color: var(--w);
-    box-shadow: 0 0 10px var(--dark);
+    box-shadow: 0 0 10px #A8782F;
     border-radius: 5px;
+    border-color: #A8782F;
   }
