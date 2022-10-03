@@ -27,6 +27,14 @@ router.get('/home-page', async (req, res) => {
   }
 })
 
+router.get('/post-joke', async (req, res) => {
+  try {
+    res.render('makePost');
+  } catch (err) {
+    res.status(501).json(err);
+  }
+})
+
 router.post('/', async (req, res) => {
   try {
     const user = await User.findOne({
