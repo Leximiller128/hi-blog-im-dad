@@ -53,7 +53,7 @@ a:hover{
 .listNav{
     color: var(--dark);
     font-size: 20px;
-    padding-bottom: 15px;
+    padding-bottom: 25px;
 }
 
 .listNavEnd{
@@ -77,4 +77,11 @@ ul{
     box-shadow: 0 0 20px var(--dark);
     text-align: center;
     justify-content: center;
+}
+
+.area{
+    background-color: var(--w);
+    padding: 15px;
+    max-height: fit-content;
+    overflow: auto;
 }
