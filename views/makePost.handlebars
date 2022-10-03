@@ -1,12 +1,24 @@
+<div class="container text-center">
+  <div class="row">
+    <div class="col-4">
+      <nav class="navbar">
+        <ul>
+          <li class="li-inline nav-item listNav"><a class="sideNav" href="/">Homepage/dashboard</a></li>
+          <li class="li-inline nav-item listNav"><a class="sideNav" href="#">Your Posts/Profile</a></li>
+          <li class="li-inline nav-item listNavEnd"><a class="sideNav" href="#">New Post</a></li>
+          <li class="li-inline nav-item"><a class="sideNav" href="#" id="logout-link">Logout</a></li>
+        </ul>
+      </nav>
+    </div>
 <div class="post card">
   <div class="card-header">
-    <h2>Create New Post</h2>
+    <h2>Post New Joke</h2>
   </div>
   <form id="new-post-form" class="card-body">
     <label class="form-label" for="post-title">Title</label>
     <input type="text" name="post-title" class="form-input" />
 
-    <label class="form-label" for="post-body">Content</label>
+    <label class="form-label" for="post-body">Joke</label>
     <textarea name="post-body" class="form-input"></textarea>
 
     <button type="submit" class="btn">Create</button>
