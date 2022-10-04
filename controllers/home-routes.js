@@ -11,7 +11,7 @@ router.get('/profile', async (req, res) => {
       include: [User],
     });
 
-    console.log(re.session.username)
+    
     const posts = postData.map((post) => post.get({ plain: true }));
 
     res.render('profile', {
