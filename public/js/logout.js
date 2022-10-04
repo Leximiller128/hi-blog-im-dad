@@ -1,8 +1,9 @@
 // const { response } = require("express");
 
 const logout = async function () {
+  console.log("ihave been clicked")
   //check route here
-  const response = await fetch("/controllers/api", {
+  const response = await fetch('/logout', {
     method: "POST",
     headers: { "Content-Type": "application/json" },
   });
@@ -14,4 +15,4 @@ const logout = async function () {
   }
 };
 
-document.querySelector("#logout-button").addEventListener("click", logout);
+document.querySelector("#logout-link").addEventListener("click", logout);
