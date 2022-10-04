@@ -4,13 +4,18 @@
 
 1. [Overview](#overview)
 
-2. [Features](#features)
-3. [Future Enhancements](#future-enhancements)
-4. [Acceptance Criteria](#acceptance-criteria)
-5. [Website Preview](#website-preview)
-6. [Technologies](#technologies)
-7. [Collaborators](#collaborators)
-8. [Resources](#resources)
+- [Dad-Jokes-Blog (Hi Blog i'm Dad)](#dad-jokes-blog-hi-blog-im-dad)
+  - [Index](#index)
+- [Overview](#overview)
+    - [Description](#description)
+    - [User Story](#user-story)
+  - [Features](#features)
+  - [Future Enhancements](#future-enhancements)
+  - [Acceptance Criteria](#acceptance-criteria)
+  - [Website Preview](#website-preview)
+  - [Technologies](#technologies)
+  - [Collaborators](#collaborators)
+  - [Resources](#resources)
 
 # Overview
 ### Description
@@ -28,5 +33,6 @@
 ## [Technologies](#index)
 
 ## [Collaborators](#index)
+-[Lorena Morales](#https://github.com/Lorena-RM)
 
 ## [Resources](#index)
