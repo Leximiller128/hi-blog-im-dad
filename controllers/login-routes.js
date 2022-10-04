@@ -7,24 +7,22 @@ const withAuth = require('../utils/auth');
 // currently at "/"
 //renders when you FIRST login(your dashboard)
 router.get('/', withAuth, async (req, res) => {
-    try {
-      const postData = await Post.findAll({
-        where: {
-          userId: req.session.userId,
-        },
-      });
-
-      const posts = postData.map((post) => post.get({ plain: true }));
+  try {
+    const postData = await Post.findAll({
+      include: [User],
+  });
+      
+  const posts = postData.map((post) => post.get({ plain: true }));
 
       
   
-      res.render('dashboard', { 
-        posts,
-        username: req.session.username
-      });
-    } catch (err) {
-      res.status(500).json(err);
-    }
+  res.render('dashboard', { 
+    posts,
+    username: req.session.username
+  });
+  } catch (err) {
+    res.status(404).json(err);
+  }
 });
 
 
@@ -53,7 +51,7 @@ router.post('/logout', (req, res) => {
       res.status(204).end();
     });
   } else {
-    res.status(405).end();
+    res.status(404).end();
   }
 });
 
