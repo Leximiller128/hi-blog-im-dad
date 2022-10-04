@@ -1,6 +1,8 @@
 const router = require('express').Router();
 const { User } = require('../../models');
 
+
+//creates NEW USER
 router.post('/', async (req, res) => {
   console.log(req)
   try {
@@ -22,6 +24,8 @@ router.post('/', async (req, res) => {
   }
 });
 
+
+// verifies password and log in info LOGS IN USER
 router.post('/login', async (req, res) => {
   try {
     const user = await User.findOne({

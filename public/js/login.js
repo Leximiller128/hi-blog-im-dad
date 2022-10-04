@@ -20,7 +20,7 @@ const loginHandler = async (event) => {
   });
 
   if (response.ok) {
-    document.location.replace("/dashboard");
+    document.location.replace("/");
   } else {
     alert("That isn't it!");
   }

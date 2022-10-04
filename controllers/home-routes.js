@@ -1,50 +1,31 @@
 const router = require('express').Router();
-const { Post} = require('../models/');
+const { Post, User} = require('../models/');
 const withAuth = require('../utils/auth');
 
-router.get('/', withAuth, async (req, res) => {
-  console.log(req.session)
+//currently at /dashboard/
+
+//renders users profile and posts
+router.get('/profile', async (req, res) => {
   try {
     const postData = await Post.findAll({
-      where: {
-        userId: req.session.userId,
-      },
+      include: [User],
     });
 
+    
     const posts = postData.map((post) => post.get({ plain: true }));
-    res.render('dashboard', {
-      layout: 'main',
+
+    res.render('profile', {
       posts,
-      username: req.session,
+      username: req.session.username,
     });
   } catch (err) {
-    res.redirect('login');
+    res.status(500).json(err);
   }
 });
 
+//brings new post page for user
 router.get('/new', withAuth, (req, res) => {
-  res.render('makePost', {
-    layout: 'main',
-  });
-});
-
-router.get('/edit/:id', withAuth, async (req, res) => {
-  try {
-    const postData = await Post.findByPk(req.params.id);
-
-    if (postData) {
-      const post = postData.get({ plain: true });
-
-      res.render('edit-post', {
-        layout: 'main',
-        post,
-      });
-    } else {
-      res.status(404).end();
-    }
-  } catch (err) {
-    res.redirect('login');
-  }
+  res.render('makePost')
 });
 
 module.exports = router;
