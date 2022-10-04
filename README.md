@@ -8,8 +8,9 @@
   - [Future Enhancements](#future-enhancements)
   - [Website Preview](#website-preview)
   - [Technologies](#technologies)
-  - [Collaborators :muscle:](#collaborators)
+  - [Collaborators](#collaborators)
   - [Resources](#resources)
+  - [License](#license)
 
 
 # Description:book:
@@ -31,7 +32,7 @@ Is this section made reduntant by Desription?
 # Future Enhancements:money_with_wings:
 Great ideas will go here.  Likely a global launch plan as well as marketing futures to maximaize earning potential.  Eventually, we'll sell out to Meta, and then beyond that, reclaim what is rightfully ours by purchasing and disbanding Meta and renaming it Hi, Blog, I'm Dad.
 
-# Website Preview:tv:
+# Website Preview:movie_camera:
 [GIF]()<br>
 [screenshot]() 
 
@@ -41,7 +42,8 @@ Great ideas will go here.  Likely a global launch plan as well as marketing futu
 -Node<br>
 -HTML<br>
 -CSS<br>
--Bootstrap
+-Bootstrap<br>
+-Grunt
 
 
 # Collaborators:muscle:
@@ -51,5 +53,8 @@ Great ideas will go here.  Likely a global launch plan as well as marketing futu
 -[Dana Golebiewski](https://github.com/danagolebiewski)<br> 
 -[Kaleb Rittenhouse](https://github.com/kalebritt)
 
-# Resources
+# Resources:mag:
 Google is always a great resource.
+
+# License:key:
+[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
