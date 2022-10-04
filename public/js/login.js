@@ -5,14 +5,12 @@ const loginHandler = async (event) => {
 
   //collect the stuff from login form
   const emailAddress = document
-    .querySelector("#exampleInputEmail1")
-    .value.trim();
+    .querySelector("#inputEmail1")
   const password = document
     .querySelector("#exampleInputPassword1")
-    .value.trim();
 
   //make sure the below route is correct
-  const response = await fetch("/login-routes/", {
+  const response = await fetch("api/users/login", {
     method: "POST",
     body: JSON.stringify({
       email: emailAddress.value,
@@ -22,11 +20,11 @@ const loginHandler = async (event) => {
   });
 
   if (response.ok) {
-    document.location.replace("./profile.js");
+    document.location.replace("/dashboard");
   } else {
     alert("That isn't it!");
   }
 };
 
 //query selctors
-document.querySelector("#submit").addEventListener("submit", loginHandler);
+document.querySelector("#login-form").addEventListener("submit", loginHandler);
