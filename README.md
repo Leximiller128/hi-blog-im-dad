@@ -10,6 +10,7 @@
   - [Technologies](#technologies)
   - [Collaborators](#collaborators)
   - [Resources](#resources)
+  - [License](#license)
 
 
 # Description:book:
@@ -54,3 +55,6 @@ Great ideas will go here.  Likely a global launch plan as well as marketing futu
 
 # Resources:mag:
 Google is always a great resource.
+
+# License:key:
+[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
