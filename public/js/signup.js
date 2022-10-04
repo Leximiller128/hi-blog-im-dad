@@ -1,17 +1,20 @@
 //sign up block: should it have its own page?
-const signupHandler = async (event) => {
+console.log("help")
+const signupHandler = async function(event) {
   event.preventDefault();
+  console.log("i hav been clicked")
 
   // const name = document.querySelector("#username-input-signup").value.trim();
-  const email = document.querySelector("#email-signup").value.trim();
+  const name = document.querySelector("#name")
+  const email = document.querySelector("#email-signup");
   const password = document
-    .querySelector("#password-input-signup")
-    .value.trim();
+    .querySelector("#password-input-signup");
 
   //is below path correct?
-  const response = await fetch("/controllers/home-routes.js", {
+  const response = await fetch('/api/user-routes', {
     method: "POST",
     body: JSON.stringify({
+      name: name.value,
       email: email.value,
       password: password.value,
     }),
@@ -19,10 +22,11 @@ const signupHandler = async (event) => {
   });
 
   if (response.ok) {
-    document.location.replace("/public/js/profile.js");
+    document.location.replace('/dashboard');
   } else {
+    console.log("failed to sign up")
     alert(response.statusText);
   }
 };
 
-document.querySelector("signup-form").addEventListener("submit", signupHandler);
+document.querySelector("#signup-form").addEventListener("submit", signupHandler);
