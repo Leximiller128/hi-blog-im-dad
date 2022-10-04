@@ -2,6 +2,7 @@ const router = require('express').Router();
 const { Post, User} = require('../models/');
 const withAuth = require('../utils/auth');
 
+//currently at /dashboard/
 
 //renders users profile and posts
 router.get('/profile', async (req, res) => {
@@ -10,11 +11,13 @@ router.get('/profile', async (req, res) => {
       include: [User],
     });
 
-    console.log(postData)
-
+    console.log(re.session.username)
     const posts = postData.map((post) => post.get({ plain: true }));
 
-    res.render('profile', { posts });
+    res.render('profile', {
+      posts,
+      username: req.session.username,
+    });
   } catch (err) {
     res.status(500).json(err);
   }

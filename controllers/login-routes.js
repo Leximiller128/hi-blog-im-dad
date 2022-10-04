@@ -9,9 +9,11 @@ const withAuth = require('../utils/auth');
 router.get('/', withAuth, async (req, res) => {
     try {
       const postData = await Post.findAll({
-        include: [User],
+        where: {
+          userId: req.session.userId,
+        },
       });
-  
+
       const posts = postData.map((post) => post.get({ plain: true }));
 
       
@@ -51,7 +53,7 @@ router.post('/logout', (req, res) => {
       res.status(204).end();
     });
   } else {
-    res.status(404).end();
+    res.status(405).end();
   }
 });
 

@@ -6,13 +6,13 @@
         <ul>
           <li class="li-inline nav-item listNav"><a class="sideNav" href="/">Homepage/dashboard</a></li>
           <li class="li-inline nav-item listNav"><a class="sideNav" href="/dashboard/profile">Your Posts/Profile</a></li>
-          <li class="li-inline nav-item listNavEnd"><a class="sideNav" href="/dashboard/new">New Post</a></li>
+          <li class="li-inline nav-item listNavEnd"><a id="profile" class="sideNav" href="/dashboard/new">New Post</a></li>
           <li class="li-inline nav-item"><a class="sideNav" href="#" id="logout-link">Logout</a></li>
         </ul>
       </nav>
     </div>
     <div class="col area">
-      <h3 class="titlePage">Jokes Feed</h3>
+      <h3 class="titlePage">{{username}}'s Jokes</h3>
       <div class="posts">
         {{#each posts}}
         <article class="card">
@@ -33,3 +33,5 @@
     </div>
   </div>
 </div>
+
+<script src="/js/profile.js"></script>
