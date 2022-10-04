@@ -26,13 +26,13 @@ As a person who exists on the planet Earth, I love a good joke. Especially jokes
 <br>
 [Hi, Blog, I'm Dad](https://hi-blog-im-dad.herokuapp.com/login) offers me the ability to create a new account, view jokes, and post my own jokes on my profile. You don't have to be an owl to see what a 'hoot' it is!
 
-# [Features](#index)
+# Features
 
-# [Future Enhancements](#index)
+# Future Enhancements
 
-# [Website Preview](#index)
+# Website Preview
 
-# [Technologies](#index)
+# Technologies
 -JavaScript
 -Express: Handlebars
 -Node
@@ -41,11 +41,11 @@ As a person who exists on the planet Earth, I love a good joke. Especially jokes
 -Bootstrap
 
 
-# [Collaborators](#index)
+# Collaborators
 
 -[Lorena Morales](https://github.com/Lorena-RM)
 <br> -[Lexi Miller](https://github.com/Leximiller128)
 <br> -[Dana Golebiewski](https://github.com/danagolebiewski)
 <br> -[Kaleb Rittenhouse](https://github.com/kalebritt)
 
-# [Resources](#index)
+# Resources
