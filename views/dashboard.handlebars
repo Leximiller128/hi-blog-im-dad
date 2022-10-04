@@ -3,24 +3,25 @@
     <div class="col-4">
       <nav class="navbar">
         <ul>
-          <li class="li-inline nav-item"><a class="sideNav" href="/">Homepage/dashboard</a></li>
-          <li class="li-inline nav-item"><a class="sideNav" href="#">Your Posts/Profile</a></li>
-          <li class="li-inline nav-item"><a class="sideNav" href="#">New Post</a></li>
+          <li class="li-inline nav-item listNav"><a class="sideNav" href="/">Homepage/dashboard</a></li>
+          <li class="li-inline nav-item listNav"><a class="sideNav" href="#">Your Posts/Profile</a></li>
+          <li class="li-inline nav-item listNavEnd"><a class="sideNav" href="#">New Post</a></li>
           <li class="li-inline nav-item"><a class="sideNav" href="#" id="logout-link">Logout</a></li>
         </ul>
       </nav>
     </div>
-    <div class="col">
+    <div class="col area">
+      <h3 class="titlePage">Jokes Feed</h3>
       <div class="posts">
         {{#each posts}}
         <article class="card">
           <div class="card-header flex-row justify-space-between">
             <h2>
-            <a href="/post/{{id}}">{{title}}</a>
+              <a href="/post/{{id}}">{{title}}</a>
             </h2>
-              <div>
-                Posted by {{User.username}} on {{format_date createdAt}}
-              </div>
+            <div>
+              Posted by {{User.username}} on {{format_date createdAt}}
+            </div>
           </div>
           <div class="card-body">
             {{body}}
