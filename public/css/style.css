@@ -117,4 +117,18 @@ ul{
   img{
     border-radius: 5px;
     box-shadow: 0 0 20px var(--dark);
-  }
+    }
+    
+    @media (max-width:629px) {
+        #sc_image {
+            display: none;
+        }
+        #signup-form {
+            width:max-content;
+            justify-content: center;
+        }
+        #login-form {
+            width:210px;
+        }
+    }
+ 
