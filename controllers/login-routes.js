@@ -5,7 +5,7 @@ const withAuth = require('../utils/auth');
 
 
 // currently at "/"
-
+//renders when you FIRST login(your dashboard)
 router.get('/', withAuth, async (req, res) => {
     try {
       const postData = await Post.findAll({
@@ -16,37 +16,17 @@ router.get('/', withAuth, async (req, res) => {
 
       
   
-      res.render('dashboard', { posts });
-    } catch (err) {
-      res.status(500).json(err);
-    }
-});
-  
-// get single post
-router.get('/post/:id', async (req, res) => {
-    try {
-      const postData = await Post.findByPk(req.params.id, {
-        include: [
-          User,
-          {
-            model: Comment,
-            include: [User],
-          },
-        ],
+      res.render('dashboard', { 
+        posts,
+        username: req.session.username
       });
-  
-      if (postData) {
-        const post = postData.get({ plain: true });
-  
-        res.render('single-post', { post });
-      } else {
-        res.status(404).end();
-      }
     } catch (err) {
       res.status(500).json(err);
     }
 });
 
+
+//rendering login and sign up pages for users
 router.get('/login', (req, res) => {
     if (req.session.loggedIn) {
       res.redirect('/');
@@ -63,6 +43,16 @@ router.get('/signup', (req, res) => {
     }
   
     res.render('signup');
+});
+
+router.post('/logout', (req, res) => {
+  if (req.session.loggedIn) {
+    req.session.destroy(() => {
+      res.status(204).end();
+    });
+  } else {
+    res.status(404).end();
+  }
 });
 
 //module.exports
