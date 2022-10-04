@@ -33,6 +33,9 @@
 ## [Technologies](#index)
 
 ## [Collaborators](#index)
--[Lorena Morales](#https://github.com/Lorena-RM)
+-[Lorena Morales](https://github.com/Lorena-RM)
+-[Lexi Miller](https://github.com/Leximiller128)
+-[Dana Golebiewski](https://github.com/danagolebiewski)
+-[Kaleb Rittenhouse](https://github.com/kalebritt)
 
 ## [Resources](#index)
