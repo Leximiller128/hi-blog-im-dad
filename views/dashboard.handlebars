@@ -21,11 +21,11 @@
               <a href="/post/{{id}}">{{title}}</a>
             </h2>
             <div>
-              Posted by {{User.username}} on {{format_date createdAt}}
+            {{body}}
             </div>
           </div>
           <div class="card-body">
-            {{body}}
+              Posted by {{username}} on
           </div>
         </article>
           {{/each}}

@@ -10,6 +10,8 @@ router.get('/profile', async (req, res) => {
       include: [User],
     });
 
+    console.log(postData)
+
     const posts = postData.map((post) => post.get({ plain: true }));
 
     res.render('profile', { posts });
