@@ -112,3 +112,8 @@ ul{
     border-radius: 5px;
     border-color: #A8782F;
   }
+
+  img{
+    border-radius: 5px;
+    box-shadow: 0 0 20px var(--dark);
+  }
