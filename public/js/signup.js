@@ -20,7 +20,7 @@ const signupHandler = async function(event) {
   });
 
   if (response.ok) {
-    document.location.replace('/profile');
+    document.location.replace('/dashboard/profile');
   } else {
     console.log("failed to sign up")
     alert(response.statusText);

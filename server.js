@@ -9,8 +9,7 @@ const PORT = process.env.PORT || 3001;
 
 const sequelize = require("./config/config");
 const { Sequelize } = require("sequelize");
-const SequelizeStore = require('connect-session-sequelize')(session.Store);
-
+const SequelizeStore = require("connect-session-sequelize")(session.Store);
 
 //cookies
 const sess = {
@@ -39,5 +38,5 @@ app.use(require("./controllers/"));
 
 app.listen(PORT, () => {
   console.log(`App listening on port ${PORT}!`);
-  sequelize.sync({ force: false });
+  sequelize.sync({ force: true });
 });
