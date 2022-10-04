@@ -33,11 +33,11 @@ As a person who exists on the planet Earth, I love a good joke. Especially jokes
 # Website Preview
 
 # Technologies
--JavaScript
--Express: Handlebars
--Node
--HTML
--CSS
+-JavaScript<br>
+-Express: Handlebars<br>
+-Node<br>
+-HTML<br>
+-CSS<br>
 -Bootstrap
 
 
