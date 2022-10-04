@@ -7,14 +7,12 @@ const signupHandler = async function(event) {
   // const name = document.querySelector("#username-input-signup").value.trim();
   const name = document.querySelector("#name")
   const email = document.querySelector("#email-signup");
-  const password = document
-    .querySelector("#password-input-signup");
+  const password = document.querySelector("#password-input-signup");
 
-  //is below path correct?
-  const response = await fetch('/api/user-routes', {
+  const response = await fetch('/api/users', {
     method: "POST",
     body: JSON.stringify({
-      name: name.value,
+      username: name.value,
       email: email.value,
       password: password.value,
     }),
