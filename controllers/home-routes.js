@@ -6,7 +6,6 @@ const withAuth = require('../utils/auth');
 
 //renders users profile and posts
 router.get('/profile/:id', async (req, res) => {
-  console.log("hello")
   try {
     const post = await Post.findAll({
       where: {
@@ -52,7 +51,9 @@ router.get('/post/:id', async (req, res) => {
 
 //brings new post page for user
 router.get('/new', withAuth, (req, res) => {
-  res.render('makePost')
+  res.render('makePost', {
+    username: req.session,
+  })
 });
 
 module.exports = router;
