@@ -95,11 +95,11 @@ ul{
     background-color: var(--light-dark);
     width: 400px;
     margin: auto;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     padding: 5px;
     outline: none;
     border-color: var(--dark);
-    box-shadow: 0 0 20px var(--dark);
+    /* box-shadow: 0 0 20px var(--dark); */
     text-align: center;
 }
 
@@ -157,6 +157,9 @@ ul{
         border-color: var(--dark);
         box-shadow: 0 0 10px var(--dark);
         text-align: center;
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
     }
     
     @media (max-width:1000px) {
