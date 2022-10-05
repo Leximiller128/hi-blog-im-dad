@@ -15,8 +15,9 @@
     <div class="col area">
       <h3 class="titlePage">{{username.username}}'s Jokes</h3>
       <div class="posts" id="jokefeed">
+        {{#if posts}}
         {{#each posts}}
-        <article class="card">
+        <article style="margin: 5px;" class="card">
           <div class="card-header flex-row justify-space-between">
             <h2>
               <a href="/post/{{id}}">{{title}}</a>
@@ -27,6 +28,9 @@
           </div>
         </article>
           {{/each}}
+          {{else}}
+          <h3 style="margin:10px;">looks like havent cracked a joke yet..go egg out and make your first one! everyone loves a good yolk 🍳</h3>
+          {{/if}}
       </div>
     </div>
   </div>

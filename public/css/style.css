@@ -157,6 +157,7 @@ ul{
         border-color: var(--dark);
         box-shadow: 0 0 10px var(--dark);
         text-align: center;
+        margin-top: 10px;
     }
     
     @media (max-width:1000px) {
