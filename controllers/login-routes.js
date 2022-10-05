@@ -42,12 +42,14 @@ router.get('/login', (req, res) => {
 });
   
 router.get('/signup', (req, res) => {
+  console.log("hellooooo")
+  console.log("i am being rendered!!!")
     try {
       if (req.session.loggedIn) {
         res.redirect('/');
         return;
       }
-      res.render('signup');
+      res.render('signUp');
     } catch (error) {
       res.status(505).json(err)
     }
