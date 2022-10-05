@@ -105,6 +105,21 @@ ul{
     margin: 5px 0;
     font-size: 1.2rem;
     border: 2px solid var(--light-dark);
+    border-radius: 10px;
+    outline: none;
+    border-color: var(--dark);
+    box-shadow: 0 0 20px var(--dark);
+    text-align: center;
+  }
+
+  .card-header{
+    background-color: var(--primary);
+    border: 2px solid var(--light-dark);
+    border-radius: 10px;
+    outline: none;
+    border-color: var(--dark);
+    box-shadow: 0 0 20px var(--dark);
+    text-align: center;
   }
 
   .post-btn{
