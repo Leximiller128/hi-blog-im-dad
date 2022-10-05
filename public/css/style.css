@@ -42,7 +42,7 @@ footer {
 }
 
 a{
-    color: var(--primary);
+    color: var(--dark);
 }
 a:hover{
     color: var(--w);
@@ -145,6 +145,18 @@ ul{
   img{
     border-radius: 5px;
     box-shadow: 0 0 20px var(--dark);
+    }
+
+    #jokefeed{
+        background-color: var(--light-dark);
+        width: 400px;
+        margin: auto;
+        border-radius: 5px;
+        padding: 5px;
+        outline: none;
+        border-color: var(--dark);
+        box-shadow: 0 0 10px var(--dark);
+        text-align: center;
     }
     
     @media (max-width:1000px) {

@@ -14,7 +14,7 @@
     </div>
     <div class="col area">
       <h3 class="titlePage">Jokes Feed</h3>
-      <div class="posts">
+      <div class="posts" id="jokefeed">
         {{#each posts}}
         <article class="card">
           <div class="card-header flex-row justify-space-between">
@@ -24,7 +24,7 @@
             <div>
             {{body}}
             </div>
-          </div>
+          {{!-- </div> --}}
           <div class="card-body">
               Posted by {{User.username}} on
           </div>
