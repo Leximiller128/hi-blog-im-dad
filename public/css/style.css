@@ -158,5 +158,8 @@ ul{
         #login-form {
             width:210px;
         }
+        .navbar{
+            display:inline-block;
+        }
     }
  

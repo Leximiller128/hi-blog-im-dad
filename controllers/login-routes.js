@@ -30,21 +30,27 @@ router.get('/', withAuth, async (req, res) => {
 
 //rendering login and sign up pages for users
 router.get('/login', (req, res) => {
+  try {
     if (req.session.loggedIn) {
       res.redirect('/');
       return;
     }
-  
     res.render('login');
+  } catch (error) {
+    res.status(505).json(err)
+  }
 });
   
 router.get('/signup', (req, res) => {
-    if (req.session.loggedIn) {
-      res.redirect('/');
-      return;
+    try {
+      if (req.session.loggedIn) {
+        res.redirect('/');
+        return;
+      }
+      res.render('signup');
+    } catch (error) {
+      res.status(505).json(err)
     }
-  
-    res.render('signup');
 });
 
 router.post('/logout', (req, res) => {
