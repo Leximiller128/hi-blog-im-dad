@@ -49,7 +49,7 @@ router.get('/signup', (req, res) => {
         res.redirect('/');
         return;
       }
-      res.render('signup');
+      res.render('signUp');
     } catch (error) {
       res.status(505).json(err)
     }
