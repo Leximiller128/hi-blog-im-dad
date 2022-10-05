@@ -2,29 +2,27 @@
   <div class="row">
     <div class="col-4">
       <nav class="navbar">
-        <p>Hello {{user.username}}</p>
+        <p>Hello {{username.username}}</p>
         <ul>
           <li class="li-inline nav-item listNav"><a class="sideNav" href="/">Homepage</a></li>
-          <li class="li-inline nav-item listNav"><a class="sideNav" href="/dashboard/profile/{{username.userId}}">Your Posts/Profile</a></li>
-          <li class="li-inline nav-item listNavEnd"><a class="sideNav" href="#">New Post</a></li>
-          <li class="li-inline nav-item listNavEnd"><a class="sideNav" id="date"></li>      
+          <li class="li-inline nav-item listNav"><a id="profile" class="sideNav" href="/dashboard/profile/{{username.userId}}">Your Posts/Profile</a></li>
+          <li class="li-inline nav-item listNavEnd"><a class="sideNav" href="/dashboard/new">New Post</a></li>
+          <li class="li-inline nav-item listNavEnd"><a class="sideNav" id="date"></li>
           <li class="li-inline nav-item"><a class="sideNav" href="#" id="logout-link">Logout</a></li>
         </ul>
       </nav>
-     <div class="posts">
-        {{#each posts}}
-        <article class="card">
-          <div class="card-header flex-row justify-space-between">
-            <h2>
-              <a href="/post/{{id}}">{{title}}</a>
-            </h2>
-            <div>
-            {{body}}
-            </div>
-          </div>
-          <div class="card-body">
-              Posted by {{username}} on
-          </div>
-        </article>
-          {{/each}}
+    </div>
+    <div class="col area">
+      <div class="card">
+        <h5 class="card-header">A Joke from {{username}}</h5>
+        <div class="card-body">
+          <h5 class="card-title">{{post.title}}</h5>
+          <p class="card-text">{{post.body}}</p>
+          <p>Posted on: {{format_date post.createdAt}}</p>
+          <a href="/" class="btn btn-light">back to Dashboard</a>
+        </div>
       </div>
+      </div>
+    </div>
+  </div>
+</div>
