@@ -25,24 +25,21 @@ router.get('/profile/:id', async (req, res) => {
 });
 
 //get a SINGLE post
-router.get('/post/:id', async (req, res) => {
+router.get('/post/:userid/:id', async (req, res) => {
+  console.log(req.session)
   try {
-    const postData = await Post.findByPk(req.params.id, {
-      include: [
-        User,
-        {
-          model: Comment,
-          include: [User],
-        },
-      ],
-    });
+    const postData = await Post.findByPk(req.params.id);
 
     if (postData) {
       const post = postData.get({ plain: true });
+      console.log(post)
 
-      res.render('singlePost', { post });
+      res.render('singlePost', {
+        post,
+        username: req.session.username
+      });
     } else {
-      res.status(404).end();
+      res.status(405).end();
     }
   } catch (err) {
     res.status(500).json(err);
