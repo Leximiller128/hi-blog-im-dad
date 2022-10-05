@@ -1,5 +1,4 @@
 //sign up block: should it have its own page?
-console.log("help")
 const signupHandler = async function(event) {
   event.preventDefault();
   console.log("i hav been clicked")
@@ -20,7 +19,7 @@ const signupHandler = async function(event) {
   });
 
   if (response.ok) {
-    document.location.replace('/dashboard/profile');
+    document.location.replace('/');
   } else {
     console.log("failed to sign up")
     alert(response.statusText);

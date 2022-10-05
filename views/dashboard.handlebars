@@ -4,7 +4,7 @@
       <nav class="navbar">
         <p>Hello {{username.username}}</p>
         <ul>
-          <li class="li-inline nav-item listNav"><a class="sideNav" href="/">Homepage/dashboard</a></li>
+          <li class="li-inline nav-item listNav"><a class="sideNav" href="/">Homepage</a></li>
           <li class="li-inline nav-item listNav"><a id="profile" class="sideNav" href="/dashboard/profile/{{username.userId}}">Your Posts/Profile</a></li>
           <li class="li-inline nav-item listNavEnd"><a class="sideNav" href="/dashboard/new">New Post</a></li>
           <li class="li-inline nav-item listNavEnd"><a class="sideNav" id="date"></li>
@@ -24,9 +24,8 @@
             <div>
             {{body}}
             </div>
-          {{!-- </div> --}}
           <div class="card-body">
-              Posted by {{User.username}} on
+              Posted by {{User.username}} on {{format_date createdAt}}
           </div>
         </article>
           {{/each}}
