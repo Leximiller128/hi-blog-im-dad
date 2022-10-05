@@ -2,7 +2,7 @@
   <div class="row">
     <div class="col-4">
       <nav class="navbar">
-        <p>Hello {{username}}</p>
+        <p>Hello {{username.username}}</p>
         <ul>
           <li class="li-inline nav-item listNav"><a class="sideNav" href="/">Homepage/dashboard</a></li>
           <li class="li-inline nav-item listNav"><a class="sideNav" href="/dashboard/profile">Your Posts/Profile</a></li>
@@ -12,7 +12,7 @@
       </nav>
     </div>
     <div class="col area">
-      <h3 class="titlePage">{{username}}'s Jokes</h3>
+      <h3 class="titlePage">{{username.username}}'s Jokes</h3>
       <div class="posts">
         {{#each posts}}
         <article class="card">
@@ -25,7 +25,7 @@
             </div>
           </div>
           <div class="card-body">
-              Posted by {{username}} on
+              Posted by {{username.username}} on
           </div>
         </article>
           {{/each}}
