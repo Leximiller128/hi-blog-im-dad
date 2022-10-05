@@ -1,1 +1,5 @@
-// format date? for comments, post route - if we wanted to timestamp those 
+module.exports = {
+    format_date: date => {
+      return `${date.getMonth() + 1}/${date.getDate()}/${date.getFullYear()}`;
+    }
+};
