@@ -14,11 +14,13 @@ router.get('/', withAuth, async (req, res) => {
       
   const posts = postData.map((post) => post.get({ plain: true }));
 
+  console.log(posts);
+
       
   
   res.render('dashboard', { 
     posts,
-    username: req.session.username
+    username: req.session
   });
   } catch (err) {
     res.status(404).json(err);

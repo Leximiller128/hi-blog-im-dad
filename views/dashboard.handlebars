@@ -2,10 +2,10 @@
   <div class="row">
     <div class="col-4">
       <nav class="navbar">
-        <p>Hello {{username}}</p>
+        <p>Hello {{username.username}}</p>
         <ul>
-          <li class="li-inline nav-item listNav"><a class="sideNav" href="/">Homepage</a></li>
-          <li class="li-inline nav-item listNav"><a id="profile" class="sideNav" href="/dashboard/profile">Your Posts/Profile</a></li>
+          <li class="li-inline nav-item listNav"><a class="sideNav" href="/">Homepage/dashboard</a></li>
+          <li class="li-inline nav-item listNav"><a id="profile" class="sideNav" href="/dashboard/profile/{{username.userId}}"">Your Posts/Profile</a></li>
           <li class="li-inline nav-item listNavEnd"><a class="sideNav" href="/dashboard/new">New Post</a></li>
           <li class="li-inline nav-item"><a class="sideNav" href="#" id="logout-link">Logout</a></li>
         </ul>
@@ -18,14 +18,14 @@
         <article class="card">
           <div class="card-header flex-row justify-space-between">
             <h2>
-              <a href="/post/{{id}}">{{title}}</a>
+              <a href="/dashboard/post/{{id}}">{{title}}</a>
             </h2>
             <div>
             {{body}}
             </div>
           </div>
           <div class="card-body">
-              Posted by {{username}} on
+              Posted by {{User.username}} on
           </div>
         </article>
           {{/each}}
