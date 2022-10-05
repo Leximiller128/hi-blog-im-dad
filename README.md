@@ -39,11 +39,12 @@ Great ideas will go here.  Likely a global launch plan as well as marketing futu
 # Technologies:computer:
 -JavaScript<br>
 -Express: Handlebars<br>
--Node<br>
+-Node.js<br>
 -HTML<br>
 -CSS<br>
 -Bootstrap<br>
--Grunt
+-MYSQL<br>
+-Day.js
 
 
 # Collaborators:muscle:

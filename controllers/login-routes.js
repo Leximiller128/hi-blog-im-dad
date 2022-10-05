@@ -14,11 +14,13 @@ router.get('/', withAuth, async (req, res) => {
       
   const posts = postData.map((post) => post.get({ plain: true }));
 
+  console.log(posts);
+
       
   
   res.render('dashboard', { 
     posts,
-    username: req.session.username
+    username: req.session
   });
   } catch (err) {
     res.status(404).json(err);
@@ -28,21 +30,27 @@ router.get('/', withAuth, async (req, res) => {
 
 //rendering login and sign up pages for users
 router.get('/login', (req, res) => {
+  try {
     if (req.session.loggedIn) {
       res.redirect('/');
       return;
     }
-  
     res.render('login');
+  } catch (error) {
+    res.status(505).json(err)
+  }
 });
   
 router.get('/signup', (req, res) => {
-    if (req.session.loggedIn) {
-      res.redirect('/');
-      return;
+    try {
+      if (req.session.loggedIn) {
+        res.redirect('/');
+        return;
+      }
+      res.render('signup');
+    } catch (error) {
+      res.status(505).json(err)
     }
-  
-    res.render('signup');
 });
 
 router.post('/logout', (req, res) => {

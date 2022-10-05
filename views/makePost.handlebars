@@ -2,28 +2,26 @@
   <div class="row">
     <div class="col-4">
       <nav class="navbar">
-        <p>Hello {{username}}</p>
+        <p>Hello {{username.username}}</p>
         <ul>
-          <li class="li-inline nav-item listNav"><a class="sideNav" href="/">Homepage/dashboard</a></li>
+          <li class="li-inline nav-item listNav"><a class="sideNav" href="/">Homepage</a></li>
           <li class="li-inline nav-item listNav"><a id="profile" class="sideNav" href="/dashboard/profile">Your Posts/Profile</a></li>
           <li class="li-inline nav-item listNavEnd"><a class="sideNav" href="/dashboard/new">New Post</a></li>
+          <li class="li-inline nav-item listNavEnd"><a class="sideNav" id="date"></li>
           <li class="li-inline nav-item"><a class="sideNav" href="#" id="logout-link">Logout</a></li>
         </ul>
       </nav>
     </div>
-<div class="post card">
   <div class="card-header">
     <h2>Post New Joke</h2>
-  </div>
-  <form id="new-post-form" class="card-body">
     <label class="form-label" for="post-title">Title</label>
     <input type="text" name="post-title" class="form-input" />
 
     <label class="form-label" for="post-body">Joke</label>
     <textarea name="post-body" class="form-input"></textarea>
 
-    <button type="submit" class="post-btn">Create</button>
-  </form>
+    <button type="submit" id="new-post-form" class="post-btn">Create</button>
+  
 </div>
 
 <script src="/js/new.js"></script>

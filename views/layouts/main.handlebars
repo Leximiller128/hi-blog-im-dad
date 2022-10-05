@@ -1,29 +1,39 @@
-<!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="/css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
     <title>Hi Blog, I'm Dad!</title>
   </head>
 
-  <body>    
+  <body>
     <div class="jumbotron jumbotron-fluid">
-        <div class="container justify-center">
-          <h1 class="display-4">Hi Blog, I'm Dad!</h1>
-          <p class="lead">They're not Dad Jokes, they're Rad Jokes</p>
-        </div>
+      <div class="container justify-center">
+        <h1 class="display-4">Hi Blog, I'm Dad!</h1>
+        <p class="lead">They're not Dad Jokes, they're Rad Jokes</p>
       </div>
+    </div>
 
-      <main class="col">
-            {{{body}}}
-      </main>
+    <main class="col">
+      {{{body}}}
+    </main>
 
-      <footer class="flex-row justify-center fixed-bottom">
-        &copy; Dad Jokes 
-      </footer>
-    </body>
-    </html>
-    <script src="/js/logout.js"></script>
+    <footer class="flex-row justify-center fixed-bottom">
+      &copy; Dad Jokes
+    </footer>
+  </body>
+</html>
+<script
+  src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+></script>
+<script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+<script>
+  dayjs().format();
+</script>
+<script src="/js/date.js"></script>
+<script src="/js/logout.js"></script>
