@@ -19,8 +19,25 @@ const loginHandler = async (event) => {
     headers: { "Content-Type": "application/json" },
   });
 
+  let picTimer = 3;
   if (response.ok) {
-    document.location.replace("/");
+    const main = document.querySelector('#mainA');
+    main.classList.add("hidden");
+      const timedImg = document.querySelector('#imageLoader')
+      timedImg.classList.remove("hidden")
+      const flexer = document.querySelector('#icon')
+      flexer.classList.remove("hidden");
+      
+      timer = setInterval(() => {
+      picTimer--;
+      if (picTimer <= 0) {
+        main.classList.remove("hidden");
+        timedImg.classList.add("hidden");
+        flexer.classList.add("hidden");
+        document.location.replace('/');
+        clearInterval(timer);
+      }
+    }, 1000);
   } else {
     alert("That isn't it!");
   }

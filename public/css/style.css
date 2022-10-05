@@ -8,6 +8,10 @@
     --border-radius: 0.3rem;
 }
 
+.hidden{
+    display: none;
+}
+
 body {
     background-color: var(--primary);
     margin: 0;
