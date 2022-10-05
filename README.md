@@ -39,8 +39,8 @@ Great ideas will go here.  Likely a global launch plan as well as marketing futu
 -HTML<br>
 -CSS<br>
 -Bootstrap<br>
--MYSQL<br>
-...and obscurity<br>
+-MySQL<br>
+...and a great obscurity<br>
 -Day.js
 
 
