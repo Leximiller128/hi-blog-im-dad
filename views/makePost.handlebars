@@ -2,11 +2,11 @@
   <div class="row">
     <div class="col-4">
       <nav class="navbar">
-        <p>Hello {{username.username}}</p>
+        <p>Hello {{username.username}}!</p>
         <ul>
           <li class="li-inline nav-item listNav"><a class="sideNav" href="/">Homepage</a></li>
-          <li class="li-inline nav-item listNav"><a id="profile" class="sideNav" href="/dashboard/profile/{{username.userId}}">Your Posts/Profile</a></li>
-          <li class="li-inline nav-item listNavEnd"><a class="sideNav" href="/dashboard/new">New Post</a></li>
+          <li class="li-inline nav-item listNav"><a id="profile" class="sideNav" href="/dashboard/profile/{{username.userId}}">Your Jokes</a></li>
+          <li class="li-inline nav-item listNavEnd"><a class="sideNav" href="/dashboard/new">New Joke</a></li>
           <li class="li-inline nav-item listNavEnd"><a class="sideNav" id="date"></li>
           <li class="li-inline nav-item"><a class="sideNav" href="#" id="logout-link">Logout</a></li>
         </ul>
@@ -14,10 +14,10 @@
     </div>
   <div class="card-header">
     <h2>Post New Joke</h2>
-    <label class="form-label" for="post-title">Title</label>
+    <label class="form-label" for="post-title">Joke Setup</label>
     <input type="text" name="post-title" class="form-input" />
 
-    <label class="form-label" for="post-body">Joke</label>
+    <label class="form-label" for="post-body">Punchline</label>
     <textarea name="post-body" class="form-input"></textarea>
 
     <button type="submit" id="new-post-form" class="post-btn">Create</button>
