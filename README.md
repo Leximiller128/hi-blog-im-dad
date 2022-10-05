@@ -4,7 +4,6 @@
 
   - [Description](#description)
   - [User Story](#user-story)
-  - [Features](#features)
   - [Future Enhancements](#future-enhancements)
   - [Website Preview](#website-preview)
   - [Technologies](#technologies)
@@ -26,9 +25,6 @@ As a person who exists on the planet Earth, I love a good joke. Especially jokes
 <br>
 [Hi, Blog, I'm Dad](https://hi-blog-im-dad.herokuapp.com/login) offers me the ability to create a new account, view jokes, and post my own jokes on my profile. You don't have to be an owl to see what a 'hoot' it is!
 
-# Features:bulb:
-Is this section made reduntant by Desription?
-
 # Future Enhancements:money_with_wings:
 Great ideas will go here.  Likely a global launch plan as well as marketing futures to maximaize earning potential.  Eventually, we'll sell out to Meta, and then beyond that, reclaim what is rightfully ours by purchasing and disbanding Meta and renaming it Hi, Blog, I'm Dad.
 
@@ -44,6 +40,7 @@ Great ideas will go here.  Likely a global launch plan as well as marketing futu
 -CSS<br>
 -Bootstrap<br>
 -MYSQL<br>
+...and obscurity<br>
 -Day.js
 
 
