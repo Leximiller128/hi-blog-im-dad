@@ -214,10 +214,10 @@ ul{
             display: none;
         }
         #signup-form {
-            width:max-content;
+            width:400px;
         }
         #login-form {
-            width:210px;
+            width:400px;
         }
         .navbar{
             display:inline-block;
@@ -230,7 +230,9 @@ ul{
         #annoyingdiv{
             display: none;
         }
-
+        #annoyingrow{
+            display: none;
+        }
 
     }
  
