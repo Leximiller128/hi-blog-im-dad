@@ -21,7 +21,26 @@
     <textarea name="post-body" class="form-input"></textarea>
 
     <button type="submit" id="new-post-form" class="post-btn">Create</button>
-  
+    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-modal="true"
+    role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">something looks fishy...</h5>
+                <button type="button" class="close" aria-label="Close" onclick="closeModal()">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                you're not really funny if you post an empty joke.. a rotten joke is better then no joke fill in your blanks!
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" onclick="closeModal()">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal-backdrop fade show" id="backdrop" style="display: none;"></div>
 </div>
 
 <script src="/js/new.js"></script>
