@@ -16,6 +16,25 @@ router.post('/', withAuth, async (req, res) => {
   }
 });
 
+router.delete('/:id', withAuth, async (req, res) => {
+  console.log(req.session)
+  try {
+    const [affectedRows] = Post.destroy({
+      where: {
+        id: req.params.id,
+      },
+    });
+
+    if (affectedRows > 0) {
+      res.status(200).end();
+    } else {
+      res.status(404).end();
+    }
+  } catch (err) {
+    res.status(501).json(err);
+  }
+});
+
 //module.exports
 module.exports = router;
 
