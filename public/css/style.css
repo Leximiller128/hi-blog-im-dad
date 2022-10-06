@@ -108,7 +108,7 @@ ul{
 .form-input {
     width: 100%;
     padding: 1%;
-    margin: 5px 0;
+    /* margin: 5px 0; */
     font-size: 1.2rem;
     border: 2px solid var(--light-dark);
     border-radius: 10px;
@@ -224,7 +224,6 @@ ul{
         }
         #jokes-feed{
             display: flex;
-            gap: 20px;
             flex-direction: column;
         }
         #annoyingdiv{
@@ -233,6 +232,13 @@ ul{
         #annoyingrow{
             display: none;
         }
-
+        .titlepage{
+            max-width: max-content;
+        }
+        #mediafix{
+            display: flex;
+            flex-direction: column;
+            margin: 20px;
+        }
     }
  
