@@ -26,9 +26,12 @@ router.get('/profile/:id', async (req, res) => {
 
 //get a SINGLE post
 router.get('/post/:userid/:id', async (req, res) => {
-  console.log(req.session)
   try {
-    const postData = await Post.findByPk(req.params.id);
+    const postData = await Post.findByPk(req.params.id, {
+      include: [
+        User
+      ],
+    });
 
     if (postData) {
       const post = postData.get({ plain: true });
