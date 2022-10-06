@@ -29,11 +29,11 @@ As a person who exists on the planet Earth, I love a good joke. Especially jokes
 Great ideas will go here.  Likely a global launch plan as well as marketing futures to maximaize earning potential.  Eventually, we'll sell out to Meta, and then beyond that, reclaim what is rightfully ours by purchasing and disbanding Meta and renaming it 'Hi, Blog, I'm Dad.'
 
 # Website Preview:movie_camera:
--Screenshots and more!:arrow_down:<br>
+-Screenshots and more!:arrow_down:
 ![Screenshot of Login Page](/public/assets/Screen%20Shot%20Login.png)
-![Screenshot of Profile Page](/public/assets/Screen%20Shot%20Profile.png)
-[GIF!]()<br><br>
-[Steal this Album!](https://music.youtube.com/watch?v=6bfKbly65JI&list=OLAK5uy_kl1YbaJ6oBfy2Jb_LXzH4AG04r_62KYMs) 
+![Screenshot of Profile Page](/public/assets/Screen%20Shot%20Profile.png)<br>
+-Check out the GIF:arrow_down:
+![GIF](/public/assets/navigationgif.gif)
 
 # Technologies:computer:
 [-JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)<br>
