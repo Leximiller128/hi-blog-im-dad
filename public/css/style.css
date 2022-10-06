@@ -224,7 +224,6 @@ ul{
         }
         #jokes-feed{
             display: flex;
-            gap: 20px;
             flex-direction: column;
         }
         #annoyingdiv{
@@ -233,6 +232,8 @@ ul{
         #annoyingrow{
             display: none;
         }
-
+        .titlepage{
+            max-width: max-content;
+        }
     }
  
