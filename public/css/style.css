@@ -186,6 +186,11 @@ ul{
     border-color: #A8782F;
     }
 
+    .row{
+        display: flex;
+        flex-direction: row;
+    }
+
     .card-title{
         font-size: 30px;
     }
@@ -210,7 +215,6 @@ ul{
         }
         #signup-form {
             width:max-content;
-            justify-content: center;
         }
         #login-form {
             width:210px;
@@ -218,5 +222,15 @@ ul{
         .navbar{
             display:inline-block;
         }
+        #jokes-feed{
+            display: flex;
+            gap: 20px;
+            flex-direction: column;
+        }
+        #annoyingdiv{
+            display: none;
+        }
+
+
     }
  
