@@ -1,5 +1,4 @@
 //start with const sucka, and event.preventDefault
-console.log("hello")
 const loginHandler = async (event) => {
   event.preventDefault();
 
@@ -39,9 +38,26 @@ const loginHandler = async (event) => {
       }
     }, 1000);
   } else {
-    alert("That isn't it!");
+    document.getElementById("backdrop").style.display = "block"
+    document.getElementById("myModal").style.display = "block"
+    document.getElementById("myModal").classList.add("show")
   }
 };
 
+function closeModal() {
+  document.getElementById("backdrop").style.display = "none"
+  document.getElementById("myModal").style.display = "none"
+  document.getElementById("myModal").classList.remove("show")
+  document.location.replace('/');
+}
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+if (event.target == modal) {
+  closeModal()
+}
+}
 //query selctors
 document.querySelector("#login-form").addEventListener("submit", loginHandler);
