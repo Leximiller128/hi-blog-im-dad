@@ -15,7 +15,7 @@
 # Description:book:
 
 ```
-"Hi, Blog, I'm Dad" is an app that allows a user to create a new profile, sign-in to their existing profile, view jokes, and save/create their own jokes to their profile.
+"Hi, Blog, I'm Dad" is an app that allows a user to create a new profile, sign-in to their existing profile, view jokes, and save/create their own jokes to their profile.  It's more fun than a barrel of monkeys jumping on the bed!
 ```
 
 # User Story:feelsgood:
@@ -29,7 +29,7 @@ As a person who exists on the planet Earth, I love a good joke. Especially jokes
 Great ideas will go here.  Likely a global launch plan as well as marketing futures to maximaize earning potential.  Eventually, we'll sell out to Meta, and then beyond that, reclaim what is rightfully ours by purchasing and disbanding Meta and renaming it 'Hi, Blog, I'm Dad.'
 
 # Website Preview:movie_camera:
--Screenshots!:arrow_down:
+-Screenshots!:arrow_down:<br>
 [Login Page!](/public/assets/Screen%20Shot%20Login.png)<br>
 [Profile Page](/public/assets/Screen%20Shot%20Profile.png)<br>
 [GIF!]()<br>
