@@ -1,7 +1,6 @@
 //sign up block: should it have its own page?
 const signupHandler = async function(event) {
   event.preventDefault();
-  console.log("i hav been clicked")
 
   // const name = document.querySelector("#username-input-signup").value.trim();
   const name = document.querySelector("#name")
@@ -21,7 +20,6 @@ const signupHandler = async function(event) {
   if (response.ok) {
     document.location.replace('/');
   } else {
-    console.log("failed to sign up")
     alert(response.statusText);
   }
 };
