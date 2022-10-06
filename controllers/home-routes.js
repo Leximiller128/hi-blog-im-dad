@@ -36,7 +36,7 @@ router.get('/post/:userid/:id', async (req, res) => {
 
       res.render('singlePost', {
         post,
-        username: req.session.username
+        username: req.session
       });
     } else {
       res.status(405).end();
