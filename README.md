@@ -26,21 +26,24 @@ As a person who exists on the planet Earth, I love a good joke. Especially jokes
 [Hi, Blog, I'm Dad](https://hi-blog-im-dad.herokuapp.com/login) offers me the ability to create a new account, view jokes, and post my own jokes on my profile. You don't have to be an owl to see what a 'hoot' it is!
 
 # Future Enhancements:money_with_wings:
-Great ideas will go here.  Likely a global launch plan as well as marketing futures to maximaize earning potential.  Eventually, we'll sell out to Meta, and then beyond that, reclaim what is rightfully ours by purchasing and disbanding Meta and renaming it Hi, Blog, I'm Dad.
+Great ideas will go here.  Likely a global launch plan as well as marketing futures to maximaize earning potential.  Eventually, we'll sell out to Meta, and then beyond that, reclaim what is rightfully ours by purchasing and disbanding Meta and renaming it 'Hi, Blog, I'm Dad.'
 
 # Website Preview:movie_camera:
-[GIF]()<br>
-[screenshot]() 
+-Screenshots!:arrow_down:
+[Login Page!](/public/assets/Screen%20Shot%20Login.png)
+[Profile Page](/public/assets/Screen%20Shot%20Profile.png)
+[GIF!]()<br>
+[Steal this Album!](https://music.youtube.com/watch?v=6bfKbly65JI&list=OLAK5uy_kl1YbaJ6oBfy2Jb_LXzH4AG04r_62KYMs) 
 
 # Technologies:computer:
 -JavaScript<br>
 -Express: Handlebars<br>
 -Node.js<br>
+-MySQL<br>
+-Bootstrap<br>
 -HTML<br>
 -CSS<br>
--Bootstrap<br>
--MySQL<br>
-...and a great obscurity<br>
+...and the great obscurity<br>
 -Day.js
 
 
