@@ -31,20 +31,20 @@ Great ideas will go here.  Likely a global launch plan as well as marketing futu
 # Website Preview:movie_camera:
 -Screenshots and more!:arrow_down:<br>
 [Login Page!](/public/assets/Screen%20Shot%20Login.png)<br>
-[Profile Page](/public/assets/Screen%20Shot%20Profile.png)<br><br>
+[Profile Page!](/public/assets/Screen%20Shot%20Profile.png)<br><br>
 [GIF!]()<br><br>
 [Steal this Album!](https://music.youtube.com/watch?v=6bfKbly65JI&list=OLAK5uy_kl1YbaJ6oBfy2Jb_LXzH4AG04r_62KYMs) 
 
 # Technologies:computer:
--JavaScript<br>
--Express: Handlebars<br>
--Node.js<br>
--MySQL<br>
--Bootstrap<br>
--HTML<br>
--CSS<br>
+[-JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript<br>
+[-Express: Handlebars](https://handlebarsjs.com/)<br>
+[-Node.js](https://nodejs.org/en/)<br>
+[-MySQL](https://www.mysql.com/)<br>
+[-Bootstrap](https://getbootstrap.com/)<br>
+[-HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)<br>
+[-CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)<br>
 ...and the great obscurity<br>
--Day.js
+[-Day.js](https://day.js.org/en/)
 
 
 # Collaborators:muscle:
@@ -55,7 +55,7 @@ Great ideas will go here.  Likely a global launch plan as well as marketing futu
 -[Kaleb Rittenhouse](https://github.com/kalebritt)
 
 # Resources:mag:
-Google is always a great resource.
+[Google](https://www.google.com/) is always a great resource.
 
 # License:key:
 [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
