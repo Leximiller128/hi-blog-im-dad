@@ -30,8 +30,8 @@ Great ideas will go here.  Likely a global launch plan as well as marketing futu
 
 # Website Preview:movie_camera:
 -Screenshots!:arrow_down:
-[Login Page!](/public/assets/Screen%20Shot%20Login.png)
-[Profile Page](/public/assets/Screen%20Shot%20Profile.png)
+[Login Page!](/public/assets/Screen%20Shot%20Login.png)<br>
+[Profile Page](/public/assets/Screen%20Shot%20Profile.png)<br>
 [GIF!]()<br>
 [Steal this Album!](https://music.youtube.com/watch?v=6bfKbly65JI&list=OLAK5uy_kl1YbaJ6oBfy2Jb_LXzH4AG04r_62KYMs) 
 
