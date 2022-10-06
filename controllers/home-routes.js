@@ -13,7 +13,7 @@ router.get('/profile/:id', async (req, res) => {
       },
     });
     
-    const posts = post.map((data) => data.get({ plain: true }));
+    const posts = post.reverse().map((data) => data.get({ plain: true }));
     console.log(posts)
     res.render('profile', {
       posts,
@@ -35,6 +35,26 @@ router.get('/post/:userid/:id', async (req, res) => {
       console.log(post)
 
       res.render('singlePost', {
+        post,
+        username: req.session
+      });
+    } else {
+      res.status(405).end();
+    }
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
+router.get('/:userid/:id', async (req, res) => {
+  try {
+    const postData = await Post.findByPk(req.params.id);
+
+    if (postData) {
+      const post = postData.get({ plain: true });
+      console.log(post)
+
+      res.render('userPost', {
         post,
         username: req.session
       });

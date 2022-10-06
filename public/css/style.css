@@ -178,7 +178,8 @@ ul{
         text-align: center;
     }
 
-    #backToDash-btn{
+    #backToDash-btn,
+    #delete-btn{
     background-color: var(--primary);
     box-shadow: 0 0 10px --dark;
     border-radius: 5px;
