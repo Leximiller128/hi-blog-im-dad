@@ -36,7 +36,7 @@ Great ideas will go here.  Likely a global launch plan as well as marketing futu
 [Steal this Album!](https://music.youtube.com/watch?v=6bfKbly65JI&list=OLAK5uy_kl1YbaJ6oBfy2Jb_LXzH4AG04r_62KYMs) 
 
 # Technologies:computer:
-[-JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript<br>
+[-JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)<br>
 [-Express: Handlebars](https://handlebarsjs.com/)<br>
 [-Node.js](https://nodejs.org/en/)<br>
 [-MySQL](https://www.mysql.com/)<br>
