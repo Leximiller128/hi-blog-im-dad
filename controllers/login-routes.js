@@ -42,8 +42,6 @@ router.get('/login', (req, res) => {
 });
   
 router.get('/signup', (req, res) => {
-  console.log("hellooooo")
-  console.log("i am being rendered!!!")
     try {
       if (req.session.loggedIn) {
         res.redirect('/');
