@@ -10,7 +10,6 @@ const newFormHandler = async function(event) {
     document.getElementById("myModal").classList.add("show")
     
   } else {
-    console.log("hello")
     
     await fetch('/api/posts', {
       method: 'POST',
