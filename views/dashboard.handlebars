@@ -2,11 +2,11 @@
   <div class="row">
     <div class="col-4">
       <nav class="navbar">
-        <p>Hello {{username.username}}</p>
+        <p>Hello {{username.username}}!</p>
         <ul>
           <li class="li-inline nav-item listNav"><a class="sideNav" href="/">Homepage</a></li>
-          <li class="li-inline nav-item listNav"><a id="profile" class="sideNav" href="/dashboard/profile/{{username.userId}}">Your Posts/Profile</a></li>
-          <li class="li-inline nav-item listNavEnd"><a class="sideNav" href="/dashboard/new">New Post</a></li>
+          <li class="li-inline nav-item listNav"><a id="profile" class="sideNav" href="/dashboard/profile/{{username.userId}}">Your Jokes</a></li>
+          <li class="li-inline nav-item listNavEnd"><a class="sideNav" href="/dashboard/new">New Joke</a></li>
           <li class="li-inline nav-item listNavEnd"><a class="sideNav" id="date"></li>
           <li class="li-inline nav-item"><a class="sideNav" href="#" id="logout-link">Logout</a></li>
         </ul>
@@ -16,12 +16,12 @@
       <h3 class="titlePage">Jokes Feed</h3>
       <div class="posts" id="jokefeed">
         {{#each posts}}
-        <article class="card">
+        <article style="margin: 5px;" class="card">
           <div class="card-header flex-row justify-space-between">
             <h2>
-              <a href="/dashboard/post/{{id}}">{{title}}</a>
+              <a href="dashboard/post/{{user_id}}/{{id}}">{{title}}</a>
             </h2>
-            <div>
+            <div class="text">
             {{body}}
             </div>
           <div class="card-body">
@@ -33,3 +33,5 @@
     </div>
   </div>
 </div>
+
+<script src="/js/logout.js"></script>

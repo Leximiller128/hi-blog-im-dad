@@ -1,5 +1,4 @@
 //start with const sucka, and event.preventDefault
-console.log("hello")
 const loginHandler = async (event) => {
   event.preventDefault();
 
@@ -19,12 +18,46 @@ const loginHandler = async (event) => {
     headers: { "Content-Type": "application/json" },
   });
 
+  let picTimer = 3;
   if (response.ok) {
-    document.location.replace("/");
+    const main = document.querySelector('#mainA');
+    main.classList.add("hidden");
+      const timedImg = document.querySelector('#imageLoader')
+      timedImg.classList.remove("hidden")
+      const flexer = document.querySelector('#icon')
+      flexer.classList.remove("hidden");
+      
+      timer = setInterval(() => {
+      picTimer--;
+      if (picTimer <= 0) {
+        main.classList.remove("hidden");
+        timedImg.classList.add("hidden");
+        flexer.classList.add("hidden");
+        document.location.replace('/');
+        clearInterval(timer);
+      }
+    }, 1000);
   } else {
-    alert("That isn't it!");
+    document.getElementById("backdrop").style.display = "block"
+    document.getElementById("myModal").style.display = "block"
+    document.getElementById("myModal").classList.add("show")
   }
 };
 
+function closeModal() {
+  document.getElementById("backdrop").style.display = "none"
+  document.getElementById("myModal").style.display = "none"
+  document.getElementById("myModal").classList.remove("show")
+  document.location.replace('/');
+}
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+if (event.target == modal) {
+  closeModal()
+}
+}
 //query selctors
 document.querySelector("#login-form").addEventListener("submit", loginHandler);

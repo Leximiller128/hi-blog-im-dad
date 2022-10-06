@@ -1,7 +1,7 @@
 
 <div class="container">
-  <div class="row">
-    <div class="col-3">
+  <div id="mainA" class="row">
+    <div class="col-3" id="annoyingrow">
       <img id="sc_image" src="/assets/Screen Shot 2022-10-03 at 6.55.48 PM.png">
     </div>
     <div class="col-6">
@@ -30,16 +30,38 @@
         <button type="submit" class="btn btn-primary" id="submit">Sign in</button>
         <small id="emailHelp" class="form-text text-muted" ></small>
         <p>Not signed up yet? </p>
-        <p>Here's a joke... why did the user laugh?</p>
-        <p>Cause the user signed up! (pun intended 😜) </p>
-        <a type="button" href="/signup" id="signup-btn">Sign up for a laugh!</a>
+        <p>Guess this is your sign... 🙃</p>
+        <a type="button" href="/signup" id="signup-btn">➡ Sign up for a laugh! ⬅</a>
         <div>We'll never share your email, but we'll share your jokes</div>
       </form>
     </div>
     <div class="col-3">
        <img id="sc_image" src="/assets/Screen Shot 2022-10-03 at 6.57.16 PM.png ">
     </div>
-
+    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-modal="true"
+    role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Are you sure you're this user?</h5>
+                <button type="button" class="close" aria-label="Close" onclick="closeModal()">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                your email or password are incorrect... try again please
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" onclick="closeModal()">Close</button>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="modal-backdrop fade show" id="backdrop" style="display: none;"></div>
+</div>
+<div id="icon" class="hidden d-flex flex-column justify-content-center">
+    <img id="imageLoader" class="hidden" src="/assets/loader.jpeg" alt="Loading...">
+  </div>
   </div>
 </div>
 

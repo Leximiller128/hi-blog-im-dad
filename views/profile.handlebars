@@ -2,11 +2,11 @@
   <div class="row">
     <div class="col-4" >
       <nav class="navbar">
-        <p>Hello {{username.username}}</p>
+        <p>Hello {{username.username}}!</p>
         <ul>
           <li class="li-inline nav-item listNav"><a class="sideNav" href="/">Homepage</a></li>
-          <li class="li-inline nav-item listNav"><a class="sideNav" href="/dashboard/profile/{{username.userId}}">Your Posts/Profile</a></li>
-          <li class="li-inline nav-item listNavEnd"><a id="profile" class="sideNav" href="/dashboard/new">New Post</a></li>
+          <li class="li-inline nav-item listNav"><a class="sideNav" href="/dashboard/profile/{{username.userId}}">Your Jokes</a></li>
+          <li class="li-inline nav-item listNavEnd"><a id="profile" class="sideNav" href="/dashboard/new">New Joke</a></li>
           <li class="li-inline nav-item listNavEnd"><a class="sideNav" id="date"></li>
           <li class="li-inline nav-item"><a class="sideNav" href="#" id="logout-link">Logout</a></li>
         </ul>
@@ -15,19 +15,23 @@
     <div class="col area">
       <h3 class="titlePage">{{username.username}}'s Jokes</h3>
       <div class="posts" id="jokefeed">
+        {{#if posts}}
         {{#each posts}}
         <article class="card">
           <div class="card-header flex-row justify-space-between">
             <h2>
-              <a href="/post/{{id}}">{{title}}</a>
+              <a href="/dashboard/{{user_id}}/{{id}}">{{title}}</a>
             </h2>
-          </div>
-          <div class="card-body" id="jokefeed">
             {{body}}
           </div>
         </article>
           {{/each}}
+          {{else}}
+          <h3 style="margin:10px;">looks like havent cracked a joke yet..go egg out and make your first one! everyone loves a good yolk 🍳</h3>
+          {{/if}}
       </div>
     </div>
   </div>
 </div>
+
+<script src="/js/logout.js"></script>

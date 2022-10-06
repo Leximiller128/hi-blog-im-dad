@@ -2,26 +2,46 @@
   <div class="row">
     <div class="col-4">
       <nav class="navbar">
-        <p>Hello {{username.username}}</p>
+        <p>Hello {{username.username}}!</p>
         <ul>
           <li class="li-inline nav-item listNav"><a class="sideNav" href="/">Homepage</a></li>
-          <li class="li-inline nav-item listNav"><a id="profile" class="sideNav" href="/dashboard/profile/{{username.userId}}">Your Posts/Profile</a></li>
-          <li class="li-inline nav-item listNavEnd"><a class="sideNav" href="/dashboard/new">New Post</a></li>
+          <li class="li-inline nav-item listNav"><a id="profile" class="sideNav" href="/dashboard/profile/{{username.userId}}">Your Jokes</a></li>
+          <li class="li-inline nav-item listNavEnd"><a class="sideNav" href="/dashboard/new">New Joke</a></li>
           <li class="li-inline nav-item listNavEnd"><a class="sideNav" id="date"></li>
           <li class="li-inline nav-item"><a class="sideNav" href="#" id="logout-link">Logout</a></li>
         </ul>
       </nav>
     </div>
-  <div class="card-header">
+  <div class="card-header" id="mediafix" >
     <h2>Post New Joke</h2>
-    <label class="form-label" for="post-title">Title</label>
+    <label class="form-label" for="post-title">Joke Setup</label>
     <input type="text" name="post-title" class="form-input" />
 
-    <label class="form-label" for="post-body">Joke</label>
+    <label class="form-label" for="post-body">Punchline</label>
     <textarea name="post-body" class="form-input"></textarea>
 
     <button type="submit" id="new-post-form" class="post-btn">Create</button>
-  
+    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-modal="true"
+    role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">something looks fishy...</h5>
+                <button type="button" class="close" aria-label="Close" onclick="closeModal()">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                you're not really funny if you post an empty joke.. a rotten joke is better then no joke fill in your blanks!
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" onclick="closeModal()">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal-backdrop fade show" id="backdrop" style="display: none;"></div>
 </div>
 
 <script src="/js/new.js"></script>
+<script src="/js/logout.js"></script>

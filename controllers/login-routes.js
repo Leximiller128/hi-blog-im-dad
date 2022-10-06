@@ -12,7 +12,7 @@ router.get('/', withAuth, async (req, res) => {
       include: [User],
   });
       
-  const posts = postData.map((post) => post.get({ plain: true }));
+  const posts = postData.reverse().map((post) => post.get({ plain: true }));
 
   console.log(posts);
 
@@ -42,8 +42,6 @@ router.get('/login', (req, res) => {
 });
   
 router.get('/signup', (req, res) => {
-  console.log("hellooooo")
-  console.log("i am being rendered!!!")
     try {
       if (req.session.loggedIn) {
         res.redirect('/');
