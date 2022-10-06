@@ -235,10 +235,8 @@ ul{
         .titlepage{
             max-width: max-content;
         }
-        #mediafix{
-            display: flex;
-            flex-direction: column;
-            margin: 20px;
-        }
+        .col-4 { 
+            flex: auto;
+            Max-width: initial;}
     }
  
