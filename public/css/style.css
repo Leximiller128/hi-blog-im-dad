@@ -179,7 +179,10 @@ ul{
     }
 
     #backToDash-btn{
-        background-color: var(--primary);
+    background-color: var(--primary);
+    box-shadow: 0 0 10px --dark;
+    border-radius: 5px;
+    border-color: #A8782F;
     }
 
     .card-title{
