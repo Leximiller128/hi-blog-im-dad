@@ -13,7 +13,7 @@ router.get('/profile/:id', async (req, res) => {
       },
     });
     
-    const posts = post.map((data) => data.get({ plain: true }));
+    const posts = post.reverse().map((data) => data.get({ plain: true }));
     console.log(posts)
     res.render('profile', {
       posts,
