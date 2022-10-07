@@ -41,6 +41,7 @@ Great ideas will go here.  Likely a global launch plan as well as marketing futu
 [-Node.js](https://nodejs.org/en/)<br>
 [-MySQL](https://www.mysql.com/)<br>
 [-Bootstrap](https://getbootstrap.com/)<br>
+[-JQuery](https://api.jquery.com/)<br>
 [-HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)<br>
 [-CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)<br>
 ...and the great obscurity<br>
